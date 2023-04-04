@@ -8,7 +8,7 @@
     color: #ffffff
 }
 
-#titulo{
+.titulo{
     text-align: center;
     font-variant: small-caps;
     font-size: 3.5em;
@@ -36,6 +36,30 @@ section{
     grid-template-columns: 200px 200px;   
 }
 .Grid2{
-    grid-template-columns:  2fr 1fr;
-
+    grid-template-columns:repeat(auto-fit,100px)
+}
+.Grid3{
+    grid-template-columns: minmax(300px,1fr) 1fr;
+}
+.Grid4{
+    grid-template-columns: repeat(3,1fr);
+}
+.Grid5{
+    max-width: 700px !important;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+}
+.Grid6{
+    max-width: 700px !important;
+    grid-template-columns: repeat(auto-fill,minmax(100px,auto));
+}
+/*  */
+.Gridrow{
+    grid-template-columns: 1fr 1fr;
+}
+.Gridrow1{
+    grid-template-rows: 100px 100px;
+}
+.Gridrow2{
+    grid-template-columns:100px auto 50px ;
+    grid-template-rows:100px 200px auto ;
 }
