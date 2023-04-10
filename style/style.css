@@ -17,9 +17,9 @@ h2{
     text-align: center;
 }
 .item{
-    margin: 5px;
     background-color: #ce1d1d;
     text-align: center;
+    margin:5px;
     font-size: 1.5em;
     border: 1px solid #000000;
 }
@@ -62,4 +62,32 @@ section{
 .Gridrow2{
     grid-template-columns:100px auto 50px ;
     grid-template-rows:100px 200px auto ;
+}
+.Gridarea1{
+    grid-template-areas:
+    "logo nav nav"
+    "sidenav cont advert"
+    "sidenav footer footer";
+    grid-gap:20px;/*DEFINE UMA DISTANCIA ENTRE OS ITEMS */
+}
+.logo{
+    grid-area: logo;
+}
+.nav{
+    grid-area: nav;
+}
+.sidenav{
+    grid-area: sidenav;
+}
+.content{
+    grid-area: cont;
+}
+.sidenav{
+    grid-area: sidenav;
+}
+.advert{
+    grid-area: advert;
+}
+.footer{
+    grid-area: footer;
 }
