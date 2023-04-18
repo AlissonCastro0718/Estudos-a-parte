@@ -90,4 +90,20 @@ section{
 }
 .footer{
     grid-area: footer;
+    
+}
+.GridareaB{
+grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
+}
+
+.GridareaB .item1{
+    background-color: rgb(255, 97, 49) ;
+    grid-area: 1/1/1/-1;
+    /* RESUME 4 COMANDOS:COLUNA DE INICIO,LINHA DE INICIO,COLUNA FINAL E LINHA FINAL */
+    
+}
+
+.GridareaB .item2{
+    background-color: #e93ee0;
+    grid-area: 2/1/span 3/4;
 }
