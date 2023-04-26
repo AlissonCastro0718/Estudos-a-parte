@@ -18,7 +18,7 @@ a{
 
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -28,8 +28,7 @@ img{
     grid-template-areas: 
     "header header header" 
     "sidenav content anuncios"
-    "footer footer footer"
-    ;
+    "footer footer footer";
 }
 .header{
     grid-area: header;
@@ -178,7 +177,6 @@ top: 2px;
     border-radius: 5px;
     box-shadow: 5px 5px 15px 0px rgb(44,44,44,.15);
     background:linear-gradient(135deg,#8844EE, #B07DFB);
- 
 }
 
 .citação  p{
@@ -208,13 +206,14 @@ padding: 15px;
     align-content: start;
     padding: 30px;
     grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
 }
 
 .anuncios > div{
-  transition: .1s ease-in-out;
+  transition: .3s ease-in-out;
 }
 .anuncios > div:hover{
-transform: scale(1.1);
+transform: scale(1.05);
 }
 
 .footer{
@@ -293,7 +292,7 @@ transform: scale(1.1);
         top: 5px;
         right: 30px;
         color: rgba(0,0,0,.3);
-        animation: seta .5 ease-in 0s infinite alternate;
+        animation: seta .5s ease-in 0s infinite alternate;
     }
     @keyframes seta {
         from{
@@ -305,7 +304,9 @@ transform: scale(1.1);
     }
 }
 
-@media(ma)
-
-
-
+@media (max-width:600px) {
+    .content{
+        grid-template-columns: auto;
+    }
+    
+}
