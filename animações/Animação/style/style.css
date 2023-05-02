@@ -1,0 +1,19 @@
+body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color: rgb(1, 1, 54);
+}
+
+.box{
+    outline: 2px solid rgb(255, 254, 254);
+}
+
+img{
+    width: 300px;
+    height:300px;
+    transform: translate();     /*MOVE O ITEM,DEIXANDO A CAIXA ESTATICA*/
+    transform: scale(1);        /*MUDA A PROPORÇÃO DO ITEM,SEU TAMANHO */
+    transform: rotate(0deg);    /*GIRA O ITEM NO SEU PROPRIO EIXO      */
+    transform: skew(0deg,0deg); /*ENTORTA O ITEM   */
+}

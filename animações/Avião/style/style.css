@@ -1,0 +1,17 @@
+body{
+    background: url(https://cdn.pixabay.com/photo/2015/08/28/08/07/petronas-911581_1280.jpg) ;
+    width: 96vw;
+    height:97vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translatey(50%);
+    
+}
+
+
+.box img{
+    height: 130px;
+    width: 200px;
+    transform: scalex(-1);
+}
