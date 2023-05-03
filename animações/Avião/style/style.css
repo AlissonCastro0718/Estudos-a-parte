@@ -5,13 +5,19 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: translatey(50%);
+    position: relative;
+
     
 }
-
+.box{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .box img{
     height: 130px;
     width: 200px;
     transform: scalex(-1);
+
 }
