@@ -1,0 +1,11 @@
+body{
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23ad65,#23d5ab);
+    background-size: 300% 300%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 97vh;
+    font-size: 300%;
+}

@@ -16,8 +16,32 @@ body{
 }
 
 .box img{
-    height: 130px;
-    width: 200px;
-    transform: scalex(-1);
+    height: 100px;
+    width: 170px;
 
+/*     animation-name: voar;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275)(0.175, 0.885, 0.32, 1.275);
+    animation-delay: 1.5s; 
+    animation-iteration-count: infinite; 
+    animation-direction: normal;
+    animation-fill-mode:backwards;
+    animation-play-state: running; */
+
+    /* shorthand */
+    animation: voar 1s linear infinite normal ;
+}
+
+
+@keyframes voar {
+    0%{
+        transform: translate(calc(96vw - 170px),0);
+    }
+    50%{
+        transform: translate(200%,-50px);
+    }
+
+    100%{
+        transform: translate(0,0);
+    }
 }
