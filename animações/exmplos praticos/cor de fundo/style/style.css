@@ -1,4 +1,5 @@
 body{
+    animation: gradiente 10s ease infinite;
     background: linear-gradient(-45deg,#ee7752,#e73c7e,#23ad65,#23d5ab);
     background-size: 300% 300%;
     font-family: sans-serif;
@@ -8,4 +9,17 @@ body{
     color: white;
     height: 97vh;
     font-size: 300%;
+}
+
+
+@keyframes gradiente{
+0%{
+    background-position: 0 50%;
+}
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0 50%;
+}
 }

@@ -1,0 +1,20 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 96vh;
+}
+
+div{
+    transform: rotate(90deg);
+}
+img{
+
+    animation: pulinhos 1s ease-in-out  alternate  infinite;
+    width:300px ;
+}
+
+@keyframes pulinhos{
+to{
+    transform: translatex(30px);/* VAI PARA CIMA E PARA BAIXO{A DIV ESTA VIRADA} */
+}
+}
